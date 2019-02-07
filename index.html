@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Легенды дотеров</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lobster');
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 250px;
+      height: 250px;
+      background: #101010;
+    }
+
+    .data {
+      font-family: 'Lobster', cursive;
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      letter-spacing: 8px;
+      font-weight: 30;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+
+  <!-- use cdn for the library / link the library file -->
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+<body>
+  <div class="container">
+    <div class="data">Спасти мир, вероятно, не удастся, однако отдельного человека спасти можно, добрый день, с вами, Борис Резнов</div>
+  </div>
+  <script type="text/javascript">
+    const text = baffle(".data");
+    text.set({
+      characters: '█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>',
+      speed: 70
+    });
+    text.start();
+    text.reveal(5000);
+
+  </script>
+</body>
+
+</html>
