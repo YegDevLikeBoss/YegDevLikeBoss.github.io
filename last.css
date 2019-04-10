@@ -1,0 +1,30 @@
+.divText {
+  background-color: #555555;
+  width: 100%;
+  height: 100%;
+}
+
+.divCont {
+  background-color: #0088ff;
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+  border-radius: 50%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-30%, -50%);
+  -ms-transform: translate(-30%, -50%);
+  transform: translate(-30%, -50%);
+}
