@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Список</title>
+</head>
+
+<body>
+
+  <select>
+    <option id="e1" value="Дед Мороз">Дед Мороз</option>
+    <option id="e2" value="Санта Клауз">Санта Клауз</option>
+    <option id="e3" value="Пер Ноэль">Пер Ноэль</option>
+    <option id="e4" value="Лос Рейес Магос">Лос Рейес Магос</option>
+  </select>
+  <br />
+  <img id="picture" src="https://24smi.org/public/media/250x250/person/2017/12/18/5xf2a0lu50db-ded-moroz.jpg" width="500" height="500" />
+
+</body>
+
+<script>
+  document.getElementById("e1").addEventListener("click", chLink1);
+  document.getElementById("e2").addEventListener("click", chLink2);
+  document.getElementById("e3").addEventListener("click", chLink3);
+  document.getElementById("e4").addEventListener("click", chLink4);
+
+  var a = document.querySelector("#picture");
+
+  function chLink1() {
+    a.setAttribute("src", "https://24smi.org/public/media/250x250/person/2017/12/18/5xf2a0lu50db-ded-moroz.jpg");
+  }
+
+  function chLink2() {
+    a.setAttribute("src", "http://imagenpng.com/wp-content/uploads/2016/12/papanoel.jpg");
+  }
+
+  function chLink3() {
+    a.setAttribute("src", "https://www.vigilantenoisy-gym.com/photo/art/grande/28958178-28264179.jpg?v=1544955319");
+  }
+
+  function chLink4() {
+    a.setAttribute("src", "http://algarvehoy.com/wp-content/uploads/2017/12/reyes-magos-cartel-800x500_c.jpg");
+  }
+
+</script>
+
+</html>
